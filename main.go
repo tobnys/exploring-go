@@ -1,13 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"net/http"
+)
 
 func main() {
-	var hello int = 123123
-	var floatVar float32 = 123.4
+	http.HandleFunc("/", indexHandler)
+	http.ListenAndServe(":8080", nil)
+}
 
-	floatVar2 := 123.61
-	stringVar := "Hello"
-
-	fmt.Println(hello, floatVar, floatVar2, stringVar)
+func indexHandler(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "Test")
 }
