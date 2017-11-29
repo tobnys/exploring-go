@@ -12,4 +12,5 @@ func main() {
 
 func indexHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Test")
+	fmt.Printf(w)
 }
