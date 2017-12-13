@@ -5,9 +5,9 @@ import (
 )
 
 func main() {
-	fmt.Println(add(1, 2))
+	fmt.Println(swapStrings("Hello", "Hello2"))
 }
 
-func add(x, y int) int {
-	return x + y
+func swapStrings(a, b string) (string, string) {
+	return b, a
 }
