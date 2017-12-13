@@ -4,10 +4,9 @@ import (
 	"fmt"
 )
 
-func main() {
-	fmt.Println(swapStrings("Hello", "Hello2"))
-}
+var hello, hello2, hello3 bool
 
-func swapStrings(a, b string) (string, string) {
-	return b, a
+func main() {
+	var c int
+	fmt.Println(hello, hello2, hello3, c)
 }
