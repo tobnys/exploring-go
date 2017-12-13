@@ -4,9 +4,9 @@ import (
 	"fmt"
 )
 
-var hello, hello2, hello3 bool
+var i int = 1
 
 func main() {
-	var c int
-	fmt.Println(hello, hello2, hello3, c)
+	var c int = 5
+	fmt.Println(i, c)
 }
