@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	var c int = 5
-	v := int32(c)
+	var c int64 = 51231241234123123
+	v := c
 	fmt.Println(v)
 }
