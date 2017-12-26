@@ -11,7 +11,7 @@ func init() {
 }
 
 func main() {
-	var c int64 = 51231241234123123
-	v := c
-	fmt.Println(v)
+	for i := 0; i < 10; i++ {
+		fmt.Println(i)
+	}
 }
