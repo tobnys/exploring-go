@@ -2,14 +2,10 @@ package main
 
 import (
 	"fmt"
-	"time"
 )
 
 func main() {
-	fmt.Println(getCurrentTime())
-}
+	defer fmt.Println("Hello")
 
-func getCurrentTime() int {
-	t := time.Now()
-	return t.Second()
+	fmt.Println("hello 2")
 }
