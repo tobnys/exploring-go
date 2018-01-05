@@ -4,8 +4,12 @@ import (
 	"fmt"
 )
 
-func main() {
-	defer fmt.Println("Hello")
+type person struct {
+	name string
+	age  int
+}
 
-	fmt.Println("hello 2")
+func main() {
+	p := person{"toby", 20}
+	fmt.Println(p.name, p.age)
 }
