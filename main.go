@@ -4,12 +4,15 @@ import (
 	"fmt"
 )
 
-type person struct {
-	name string
-	age  int
-}
-
 func main() {
-	p := person{"toby", 20}
-	fmt.Println(p.name, p.age)
+	// Array
+	a := []int{1, 2, 3, 4, 5}
+	fmt.Println(a)
+
+	// Slice
+	var s []int = a[1:3]
+	fmt.Println(s)
+
+	d := a[1:3]
+	fmt.Println(d)
 }
