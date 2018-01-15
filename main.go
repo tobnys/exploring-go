@@ -26,5 +26,6 @@ func main() {
 	// https://golang.org/pkg/builtin/#append
 	x = append(x, 1, 2, 3)
 	fmt.Println(x)
+	// Test comment
 }
 
